@@ -1,0 +1,105 @@
+:root {
+  --accent: #1e3a8a; /* строгий тёмно-синий */
+  --text: #111827;
+  --muted: #374151;
+  --bg: #ffffff;
+  --surface: #f9fafb;
+  --radius: 8px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+/* Шапка */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid #e5e7eb;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.logo-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.emblem {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.school-title h1 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--accent);
+}
+.slogan {
+  margin: 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Меню */
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  padding: 0;
+  margin: 0;
+}
+.nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+  padding: 8px;
+}
+.nav a:hover {
+  color: var(--accent);
+}
+
+/* Секции */
+section {
+  padding: 32px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+h2 {
+  margin-top: 0;
+  color: var(--accent);
+}
+.advantages ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+/* Карта */
+.map {
+  margin-top: 12px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Подвал */
+.site-footer {
+  background: var(--surface);
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+  padding: 16px 0;
+  color: var(--muted);
+  font-size: 14px;
+}
